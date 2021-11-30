@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from pyrogram import Client
 from config import Config
 bot = Client(
