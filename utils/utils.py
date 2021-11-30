@@ -1642,7 +1642,7 @@ async def check_changes():
                     await db.edit_default(var, current_value)         
     
     async def is_audio(file):
-    have_audio=False
+    have_audio=True
     ffprobe_cmd = ["ffprobe", "-i", file, "-v", "quiet", "-of", "json", "-show_streams"]
     process = await asyncio.create_subprocess_exec(
             *ffprobe_cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
