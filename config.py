@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from utils import LOGGER
 try:
    import os
